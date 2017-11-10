@@ -32,7 +32,9 @@ To compile the project, it is necessary to be in the “build” folder.
 
 In the right folder, on the terminal :
 
-cmake ..
+cmake ..   
+
+
 make
 
 

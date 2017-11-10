@@ -14,6 +14,8 @@ All neurons receive a connection from 10% of the total network.
 More exactly, each of them receives randomly (uniform integer distribution) CE=1000 excitatory connections and CI=250 inhibitory connections.
 In addition, each of them receives randomly 1000 connections from outside the network (poisson distribution).
 
+
+
 B. Parameters of the simulation :
 
 The simulation depends on :
@@ -21,6 +23,7 @@ The simulation depends on :
 -g = JI/JE : JI is the weight of the inhibitory connections and JE is the weight of the excitatory connections for the post-synaptic neurons
 
 -eta = nu_ext/nu_thr : nu_ext is the rate of firing from the neurons outside the network and nu_thr is the rate needed to reach threshold in absence of feedback
+
 
 
 C. Compilation :
@@ -32,25 +35,30 @@ In the right folder, on the terminal :
 cmake ..
 make
 
+
+
 D. Execution :
 
 To execute the program after its compilation, on the terminal :   ./Neurons
 To execute the tests after the compilation of the program, on the terminal :   ./UnitTests
 
 
+
 E. Utilisation :
 
 At the execution of Neurons, the program will ask you for a positive simulation time in ms, and for strictly positive values for g and eta.
 In order to recreating the Fig.8 of the Brunel’s paper, you can choose :
-	A : g=3 and eta=2
-	B : g=6 and eta=4
-	C: g=5 and eta=2
-	D: g=4.5 and eta=0.9
+
+A : g=3 and eta=2
+B : g=6 and eta=4
+C: g=5 and eta=2
+D: g=4.5 and eta=0.9
 
 
 Note that in the file named “constants.hpp” and located in the “src” folder, it is possible to modify other parameters for the simulation, like the refractory time, the time delay,…
 
 The documentation of the program is disponible in the file named "files.html" located in "html" in the "build" folder.
+
 
 
 F. Results :

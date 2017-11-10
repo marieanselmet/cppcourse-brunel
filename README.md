@@ -48,10 +48,12 @@ E. Utilisation :
 
 At the execution of Neurons, the program will ask you for a positive simulation time in ms, and for strictly positive values for g and eta.
 In order to recreating the Fig.8 of the Brunel’s paper, you can choose :
-
 A : g=3 and eta=2
+
 B : g=6 and eta=4
+
 C: g=5 and eta=2
+
 D: g=4.5 and eta=0.9
 
 

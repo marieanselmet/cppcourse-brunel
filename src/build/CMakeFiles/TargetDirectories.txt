@@ -1,0 +1,7 @@
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/CMakeFiles/doc.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/gtest/googlemock/CMakeFiles/gmock.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/CMakeFiles/Neurons.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/gtest/googlemock/CMakeFiles/gmock_main.dir
+/home/INTRANET/anselmet/myfiles/neuroproject/src/build/CMakeFiles/UnitTests.dir

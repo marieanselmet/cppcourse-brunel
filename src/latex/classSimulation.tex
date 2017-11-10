@@ -1,0 +1,136 @@
+\hypertarget{classSimulation}{\section{Simulation Class Reference}
+\label{classSimulation}\index{Simulation@{Simulation}}
+}
+
+
+\hyperlink{classSimulation}{Simulation} class.  
+
+
+
+
+{\ttfamily \#include $<$simulation.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimulation_a5b224cc5b36bcc8eb29689aff223de41}{Simulation} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}{\hyperlink{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}{$\sim$\-Simulation} ()}\label{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classSimulation_a10db4c4b53c317b2213d47ddbb38a26c}{void \hyperlink{classSimulation_a10db4c4b53c317b2213d47ddbb38a26c}{simtime\-Entry} ()}\label{classSimulation_a10db4c4b53c317b2213d47ddbb38a26c}
+
+\begin{DoxyCompactList}\small\item\em For the entry of the simulation time. \end{DoxyCompactList}\item 
+double \hyperlink{classSimulation_ad94d39d7b80d43d7117735d7781095d4}{eta\-Entry} ()
+\begin{DoxyCompactList}\small\item\em For the entry of the eta value. \end{DoxyCompactList}\item 
+double \hyperlink{classSimulation_aa9c2c2460c65c62a00c594f5f621d71f}{g\-Entry} ()
+\begin{DoxyCompactList}\small\item\em For the entry of the g value. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classSimulation_a91d1264242531776de72c355776b88e1}{get\-Clock} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the value of the global clock of the simulation. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classSimulation_ae9082b8c97c828540dd2f24618f5b55b}{get\-Simtime} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the simulation time. \end{DoxyCompactList}\item 
+\hypertarget{classSimulation_a4ee55c77928e12594b3d175f7280f91f}{void \hyperlink{classSimulation_a4ee55c77928e12594b3d175f7280f91f}{update\-Clock} ()}\label{classSimulation_a4ee55c77928e12594b3d175f7280f91f}
+
+\begin{DoxyCompactList}\small\item\em Method that updates the global clock at each simulation step. \end{DoxyCompactList}\item 
+void \hyperlink{classSimulation_a92bcb99c5b442ef67d0229ae922a6240}{run} (std\-::ofstream \&file)
+\begin{DoxyCompactList}\small\item\em Method that runs the simulation at each simulation step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSimulation}{Simulation} class. 
+
+To model simulations 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSimulation_a5b224cc5b36bcc8eb29689aff223de41}{\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection[{Simulation}]{\setlength{\rightskip}{0pt plus 5cm}Simulation\-::\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimulation_a5b224cc5b36bcc8eb29689aff223de41}
+
+
+Constructor. 
+
+Entry of the simulation time 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSimulation_ad94d39d7b80d43d7117735d7781095d4}{\index{Simulation@{Simulation}!eta\-Entry@{eta\-Entry}}
+\index{eta\-Entry@{eta\-Entry}!Simulation@{Simulation}}
+\subsubsection[{eta\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}double Simulation\-::eta\-Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimulation_ad94d39d7b80d43d7117735d7781095d4}
+
+
+For the entry of the eta value. 
+
+\begin{DoxyReturn}{Returns}
+the value of eta=Nu\-\_\-ext/\-Nu\-\_\-thr 
+\end{DoxyReturn}
+\hypertarget{classSimulation_aa9c2c2460c65c62a00c594f5f621d71f}{\index{Simulation@{Simulation}!g\-Entry@{g\-Entry}}
+\index{g\-Entry@{g\-Entry}!Simulation@{Simulation}}
+\subsubsection[{g\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}double Simulation\-::g\-Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimulation_aa9c2c2460c65c62a00c594f5f621d71f}
+
+
+For the entry of the g value. 
+
+\begin{DoxyReturn}{Returns}
+the value of g=J\-E/\-J\-I 
+\end{DoxyReturn}
+\hypertarget{classSimulation_a91d1264242531776de72c355776b88e1}{\index{Simulation@{Simulation}!get\-Clock@{get\-Clock}}
+\index{get\-Clock@{get\-Clock}!Simulation@{Simulation}}
+\subsubsection[{get\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Simulation\-::get\-Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSimulation_a91d1264242531776de72c355776b88e1}
+
+
+Getter for the value of the global clock of the simulation. 
+
+\begin{DoxyReturn}{Returns}
+the value of the attribute clock of the simulation 
+\end{DoxyReturn}
+\hypertarget{classSimulation_ae9082b8c97c828540dd2f24618f5b55b}{\index{Simulation@{Simulation}!get\-Simtime@{get\-Simtime}}
+\index{get\-Simtime@{get\-Simtime}!Simulation@{Simulation}}
+\subsubsection[{get\-Simtime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Simulation\-::get\-Simtime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classSimulation_ae9082b8c97c828540dd2f24618f5b55b}
+
+
+Getter for the simulation time. 
+
+\begin{DoxyReturn}{Returns}
+the simulation time 
+\end{DoxyReturn}
+\hypertarget{classSimulation_a92bcb99c5b442ef67d0229ae922a6240}{\index{Simulation@{Simulation}!run@{run}}
+\index{run@{run}!Simulation@{Simulation}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Simulation\-::run (
+\begin{DoxyParamCaption}
+\item[{std\-::ofstream \&}]{file}
+\end{DoxyParamCaption}
+)}}\label{classSimulation_a92bcb99c5b442ef67d0229ae922a6240}
+
+
+Method that runs the simulation at each simulation step. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & the file where to write times of the neuron spikes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+simulation.\-hpp\item 
+simulation.\-cpp\end{DoxyCompactItemize}

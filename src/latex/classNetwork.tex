@@ -1,0 +1,204 @@
+\hypertarget{classNetwork}{\section{Network Class Reference}
+\label{classNetwork}\index{Network@{Network}}
+}
+
+
+\hyperlink{classNetwork}{Network} class.  
+
+
+
+
+{\ttfamily \#include $<$network.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNetwork_abafb9fc91049cb513d81acf2b7b3540c}{Network} (unsigned int long nbr\-\_\-excitatory, unsigned int long nbr\-\_\-inhibitory, double Nu\-\_\-ext\-\_\-, double J\-I\-\_\-)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}{\hyperlink{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}{$\sim$\-Network} ()}\label{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classNetwork_a45539b55ae8f8addbceca14fa3dfd2a0}{get\-Clock} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the local clock of the neuron. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classNetwork_a7bdc5536e8e0d4885bc0eb97e00bd0ba}{get\-Nbr\-Neurons} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the number of neurons in the network. \end{DoxyCompactList}\item 
+std\-::vector$<$ \hyperlink{classNeuron}{Neuron} $>$ \hyperlink{classNetwork_a3bd2015d054cef2768ac9d366bac86ab}{get\-Neurons} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the neurons of the network. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classNetwork_a160ad86055cce98540fb485879a209c4}{Excitatory\-Connections\-Test} (unsigned int long neuron\-Number) const 
+\begin{DoxyCompactList}\small\item\em Test method used in the unit\-Tests to know the number of excitatory connections that receives the neuron 'neuron\-Number'. \end{DoxyCompactList}\item 
+unsigned int long \hyperlink{classNetwork_af7d524e6438ecdf4a1e3bf30d2333b64}{Inhibitory\-Connections\-Test} (unsigned int long neuron\-Number) const 
+\begin{DoxyCompactList}\small\item\em Test method used in the unit\-Tests to know the number of inhibitory connections that receives the neuron 'neuron\-Number'. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a5b4bf3884d79c4b16c08e51c842c4b4c}{set\-Nbr\-Neurons} (unsigned int long nbr)
+\begin{DoxyCompactList}\small\item\em Setter for the total number of neurons in the network. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a4c0a61aaff28c3a406c0032edc763d3f}{update} (double external\-\_\-current, std\-::ofstream \&output\-\_\-file)
+\begin{DoxyCompactList}\small\item\em Method that updates the network at each time step of the simulation. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a203c447e17c16442f2c24fae27d102a2}{update\-Clock} ()
+\begin{DoxyCompactList}\small\item\em Method that updates the local clock of the network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classNetwork}{Network} class. 
+
+To model neuron networks 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNetwork_abafb9fc91049cb513d81acf2b7b3540c}{\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\subsubsection[{Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::\-Network (
+\begin{DoxyParamCaption}
+\item[{unsigned int long}]{nbr\-\_\-excitatory, }
+\item[{unsigned int long}]{nbr\-\_\-inhibitory, }
+\item[{double}]{Nu\-\_\-ext\-\_\-, }
+\item[{double}]{J\-I\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_abafb9fc91049cb513d81acf2b7b3540c}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbr\-\_\-excitatory} & the number of excitatory neurons in the network \\
+\hline
+{\em nbr\-\_\-inhibitory} & the number of inhibitory neurons in the network \\
+\hline
+{\em eta\-\_\-} & the value of the ratio Nu\-\_\-ext/\-Nu\-\_\-thr \\
+\hline
+{\em J\-I\-\_\-} & the weight of inhibitory connections \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNetwork_a160ad86055cce98540fb485879a209c4}{\index{Network@{Network}!Excitatory\-Connections\-Test@{Excitatory\-Connections\-Test}}
+\index{Excitatory\-Connections\-Test@{Excitatory\-Connections\-Test}!Network@{Network}}
+\subsubsection[{Excitatory\-Connections\-Test}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Network\-::\-Excitatory\-Connections\-Test (
+\begin{DoxyParamCaption}
+\item[{unsigned int long}]{neuron\-Number}
+\end{DoxyParamCaption}
+) const}}\label{classNetwork_a160ad86055cce98540fb485879a209c4}
+
+
+Test method used in the unit\-Tests to know the number of excitatory connections that receives the neuron 'neuron\-Number'. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neuron\-Number} & the number of the corresponding neuron in neurons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of excitatory connections that receives the neuron 'neuron\-Number' 
+\end{DoxyReturn}
+\hypertarget{classNetwork_a45539b55ae8f8addbceca14fa3dfd2a0}{\index{Network@{Network}!get\-Clock@{get\-Clock}}
+\index{get\-Clock@{get\-Clock}!Network@{Network}}
+\subsubsection[{get\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Network\-::get\-Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classNetwork_a45539b55ae8f8addbceca14fa3dfd2a0}
+
+
+Getter for the local clock of the neuron. 
+
+\begin{DoxyReturn}{Returns}
+the value of the attribute clock of the network 
+\end{DoxyReturn}
+\hypertarget{classNetwork_a7bdc5536e8e0d4885bc0eb97e00bd0ba}{\index{Network@{Network}!get\-Nbr\-Neurons@{get\-Nbr\-Neurons}}
+\index{get\-Nbr\-Neurons@{get\-Nbr\-Neurons}!Network@{Network}}
+\subsubsection[{get\-Nbr\-Neurons}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Network\-::get\-Nbr\-Neurons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classNetwork_a7bdc5536e8e0d4885bc0eb97e00bd0ba}
+
+
+Getter for the number of neurons in the network. 
+
+\begin{DoxyReturn}{Returns}
+the value of the attribute nbr\-Neurons, the number of neurons in the network 
+\end{DoxyReturn}
+\hypertarget{classNetwork_a3bd2015d054cef2768ac9d366bac86ab}{\index{Network@{Network}!get\-Neurons@{get\-Neurons}}
+\index{get\-Neurons@{get\-Neurons}!Network@{Network}}
+\subsubsection[{get\-Neurons}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Neuron} $>$ Network\-::get\-Neurons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classNetwork_a3bd2015d054cef2768ac9d366bac86ab}
+
+
+Getter for the neurons of the network. 
+
+\begin{DoxyReturn}{Returns}
+a vector of neurons that contains the neurons of the network 
+\end{DoxyReturn}
+\hypertarget{classNetwork_af7d524e6438ecdf4a1e3bf30d2333b64}{\index{Network@{Network}!Inhibitory\-Connections\-Test@{Inhibitory\-Connections\-Test}}
+\index{Inhibitory\-Connections\-Test@{Inhibitory\-Connections\-Test}!Network@{Network}}
+\subsubsection[{Inhibitory\-Connections\-Test}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int long Network\-::\-Inhibitory\-Connections\-Test (
+\begin{DoxyParamCaption}
+\item[{unsigned int long}]{neuron\-Number}
+\end{DoxyParamCaption}
+) const}}\label{classNetwork_af7d524e6438ecdf4a1e3bf30d2333b64}
+
+
+Test method used in the unit\-Tests to know the number of inhibitory connections that receives the neuron 'neuron\-Number'. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em neuron\-Number} & the number of the corresponding neuron in neurons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of inhibitory connections that receives the neuron 'neuron\-Number' 
+\end{DoxyReturn}
+\hypertarget{classNetwork_a5b4bf3884d79c4b16c08e51c842c4b4c}{\index{Network@{Network}!set\-Nbr\-Neurons@{set\-Nbr\-Neurons}}
+\index{set\-Nbr\-Neurons@{set\-Nbr\-Neurons}!Network@{Network}}
+\subsubsection[{set\-Nbr\-Neurons}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::set\-Nbr\-Neurons (
+\begin{DoxyParamCaption}
+\item[{unsigned int long}]{nbr}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a5b4bf3884d79c4b16c08e51c842c4b4c}
+
+
+Setter for the total number of neurons in the network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nbr} & the total number of neurons in the network \\
+\hline
+\end{DoxyParams}
+\hypertarget{classNetwork_a4c0a61aaff28c3a406c0032edc763d3f}{\index{Network@{Network}!update@{update}}
+\index{update@{update}!Network@{Network}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::update (
+\begin{DoxyParamCaption}
+\item[{double}]{external\-\_\-current, }
+\item[{std\-::ofstream \&}]{output\-\_\-file}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a4c0a61aaff28c3a406c0032edc763d3f}
+
+
+Method that updates the network at each time step of the simulation. 
+
+updates each neuron of the network updates the neuron connections of the network updates the local clock 
+\begin{DoxyParams}{Parameters}
+{\em external\-\_\-current} & the external current (0.\-0 m\-V in our simulation) \\
+\hline
+{\em output\-\_\-file} & the file where to write times of the neuron spikes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classNetwork_a203c447e17c16442f2c24fae27d102a2}{\index{Network@{Network}!update\-Clock@{update\-Clock}}
+\index{update\-Clock@{update\-Clock}!Network@{Network}}
+\subsubsection[{update\-Clock}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::update\-Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a203c447e17c16442f2c24fae27d102a2}
+
+
+Method that updates the local clock of the network. 
+
+increment the local clock of the network at each simulation step 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+network.\-hpp\item 
+network.\-cpp\end{DoxyCompactItemize}

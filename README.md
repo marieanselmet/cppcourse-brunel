@@ -42,6 +42,8 @@ make
 D. Execution :
 
 To execute the program after its compilation, on the terminal :   ./Neurons
+
+
 To execute the tests after the compilation of the program, on the terminal :   ./UnitTests
 
 

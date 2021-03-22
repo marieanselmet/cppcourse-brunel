@@ -1,4 +1,4 @@
-# cppcourse-brunel
+# Simulation of the dynamics of sparsely connected networks of excitatory and inhibitory spiking neurons
 
 This program simulates a neuron network and is based on the Nicolas Brunel’s paper entitled “Dynamics of sparsely connected networks of excitatory and inhibitory spiking neurons”.
 
